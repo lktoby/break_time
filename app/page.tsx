@@ -1,19 +1,20 @@
 import Link from "next/link";
+import { Button } from "@/components/ui/button";
 
-export default function Home() {
+export default function ButtonUsage() {
   return (
     <div
-      className="min-h-screen bg-cover bg-center"
-      
+      style={{
+        height: "100vh",
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+      }}
     >
-      <div className="text-center text-white text-3xl pt-20">
-        hello world
-      </div>
-
-      <div className="text-center mt-10">
-        <Link href="/exchange">click me</Link>
-        <br />
-        <Link href="/book">book</Link>
+      <div style={{ transform: "translateY(40px)" }}>
+        <Button style={{ fontFamily: "NicoMoji" }}>
+        きょうのシールをゲットしよう
+        </Button>
       </div>
     </div>
   );
