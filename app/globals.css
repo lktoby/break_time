@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 @font-face {
-  font-family: "NicoMoji";
+  font-family: "NicoMoji"; 
   src: url("/fonts/NicoMoji-Regular.ttf") format("truetype");
 }
 
@@ -17,4 +17,43 @@ body {
   -webkit-text-stroke: 1px white;
   font-size: xx-large;
 
+}
+
+.title {
+  font-family: "NicoMoji", sans-serif;
+  font-size: 4rem;
+  white-space: nowrap;
+}
+
+.letter {
+  display: inline-block;
+
+  color: #fff3d6;
+
+  text-shadow:
+    0 4px 0 #c7b6ff,
+    0 8px 0 #b39df7,
+    0 12px 20px rgba(0,0,0,0.2);
+
+  opacity: 0;
+
+  animation:
+    popLetter 0.5s forwards,
+    float 2s ease-in-out infinite;
+}
+
+@keyframes popLetter {
+  0% {
+    opacity: 0;
+    transform: translateY(30px) scale(0);
+  }
+
+  80% {
+    transform: translateY(-5px) scale(1.2);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
 }
