@@ -12,16 +12,22 @@ export default function Book() {
         </div>
       </div>
       
-
-      
       <div className="flex justify-center">
         <div className="grid grid-cols-8 gap-8 p-5 pb-24">
-          {Array.from({ length: 24 }).map((_, i) => (
-            <div
-              key={i}
-              className="w-16 h-16 bg-white rounded-xl shadow border border-gray-100"
+
+        {Array.from({ length: 24 }).map((_, i) => (
+        <div
+            key={i}
+            className="relative w-16 h-16 rounded-xl  border border-black-100 overflow-hidden shadow-[0_4px_0_rgba(0,0,0,0.2)] bg-black"
+        >
+        {/* 薄い背景画像 */}
+            <img
+            src="/grey_bear.png"
+            className="absolute inset-0 w-full h-full object-cover opacity-60"
             />
-          ))}
+        </div>
+        ))}
+
         </div>
       </div>
 
