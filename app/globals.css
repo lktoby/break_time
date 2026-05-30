@@ -1,10 +1,22 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@font-face {
+  font-family: "NicoMoji";
+  src: url("/fonts/NicoMoji-Regular.ttf") format("truetype");
+}
+
 
 body {
   background-image: url("/opening.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  font-family: var(--font-nico-moji);
+  color: #9887c5;
+  
+  font-size: xx-large;
+
+
+
 }
