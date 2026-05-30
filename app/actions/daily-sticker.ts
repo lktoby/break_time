@@ -36,7 +36,12 @@ export async function claimDailySticker(): Promise<ClaimResult> {
     return { error: fetchError?.message ?? "failed to fetch sticker info" };
   }
 
-  const sticker = event.stickers as { name: string; image_path: string };
+  // Supabaseのjoinは配列で返るので最初の要素を取る
+  const raw = event.stickers as { name: string; image_path: string }[] | null;
+  if (!raw || raw.length === 0) {
+    return { error: "sticker not found" };
+  }
+  const sticker = raw[0];
 
   return { sticker, eventId };
 }
