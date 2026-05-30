@@ -14,9 +14,7 @@ body {
   background-repeat: no-repeat;
   font-family: var(--font-nico-moji);
   color: #9887c5;
-  
+  -webkit-text-stroke: 1px white;
   font-size: xx-large;
-
-
 
 }
