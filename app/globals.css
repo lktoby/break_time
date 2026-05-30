@@ -3,5 +3,8 @@
 @tailwind utilities;
 
 body {
-  background-color: violet;
+  background-image: url("/opening.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
