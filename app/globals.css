@@ -2,6 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+@theme inline {
+  --font-sans: var(--font-nico-moji);
+}
+
 body {
   background-color: violet;
+  font-family: var(--font-nico-moji);
+  color: #9887c5;
+  -webkit-text-stroke: 1px #ffffff;
+  font-size: xx-large;
 }

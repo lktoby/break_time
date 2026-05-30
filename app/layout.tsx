@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Geist } from "next/font/google";
+import localFont from "next/font/local";
 import "./globals.css";
 import { ThemeProvider } from "next-themes";
 
@@ -12,6 +13,12 @@ export const metadata: Metadata = {
   title: "Next.js and Supabase Starter Kit",
   description: "The fastest way to build apps with Next.js and Supabase",
 };
+
+const nicoMoji = localFont({
+  src: './NicoMoji-Regular.ttf',
+  display: "swap",
+  variable: '--font-nico-moji'
+})
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -26,7 +33,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={`${geistSans.className} antialiased`}>
+      <body className={` ${nicoMoji.className} antialiased`}>
         {children}
       </body>
     </html>
