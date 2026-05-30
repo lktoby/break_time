@@ -7,7 +7,10 @@
 }
 
 body {
-  background-color: violet;
+  background-image: url("/opening.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   font-family: var(--font-nico-moji);
   color: #9887c5;
   -webkit-text-stroke: 1px #ffffff;

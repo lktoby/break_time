@@ -4,11 +4,18 @@ import { Button } from "@/components/ui/button";
 
 export default function Home() {
   return (
-    <div>
-      <div className="text-center bg-white">hello world</div>
-      <Button>button</Button>
-      <div className="absolute inset-x-0 bottom-0">
-        <BottomNav></BottomNav>
+    <div className="min-h-screen bg-cover bg-center" >
+      <div className="text-center text-white text-3xl pt-20">
+        hello world
+      </div>
+      <div className="text-center mt-10">
+        <Link href="/exchange">click me</Link>
+        <br />
+        <Link href="/book">book</Link>
+        <Button>button</Button>
+        <div className="absolute inset-x-0 bottom-0">
+          <BottomNav></BottomNav>
+        </div>
       </div>
     </div>
   );
