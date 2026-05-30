@@ -8,7 +8,7 @@ export default function Book() {
      
       <div className="flex justify-center">
         <div className="p-6 text-3xl font-bold">
-        <Badge>あつめたシールたち</Badge>
+        <Badge>★シールちょう★</Badge>
         </div>
       </div>
       

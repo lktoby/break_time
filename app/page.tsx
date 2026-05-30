@@ -17,7 +17,7 @@ export default function ButtonUsage() {
         }}
       >
         <div style={{ transform: "translateY(40px)" }}>
-          <Button>きょうのシールをゲットしよう</Button>
+          <Button>きょうのシールをゲットしよう★</Button>
         </div>
       </div>
 
