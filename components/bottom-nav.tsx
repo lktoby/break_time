@@ -9,10 +9,9 @@ export function BottomNav() {
                 <div className="flex justify-around items-end text-center flex-stretch">
                     <button className="grow focus:opacity-60 focus:bg-purple-200 focus:rounded-xl hover:opacity-60">
                         <ul className="flex flex-col items-center">
-
                             <li><Link href='/'>
                             <div className="w-20 h-20 rounded-full bg-white overflow-hidden relative">
-                            　<Image src='/bear.png' alt='home page' fill className="object-cover"></Image>
+                            <Image src='/bear.png' alt='home page' fill className="object-cover"></Image>
                             </div>
                             </Link></li>
                             <li><Link href='/' className="">ホーム</Link></li>
@@ -20,13 +19,13 @@ export function BottomNav() {
                     </button>
                     <button className="grow focus:opacity-60 focus:bg-purple-200 focus:rounded-xl hover:opacity-60">
                         <ul className="flex flex-col grow items-center">
-                        <li><Link href='/exchange'>
-                        <div className="w-20 h-20 rounded-full bg-white overflow-hidden relative">
-                        <Image src='/dog3.png' alt='exchange' fill className="object-cover"></Image>
-                        </div>
-                        </Link></li>
-                        <li><Link href='/exchange'>こうかん</Link></li>
-                    </ul>
+                            <li><Link href='/exchange'>
+                            <div className="w-20 h-20 rounded-full bg-white overflow-hidden relative">
+                            <Image src='/dog3.png' alt='exchange' fill className="object-cover"></Image>
+                            </div>
+                            </Link></li>
+                            <li><Link href='/exchange'>こうかん</Link></li>
+                        </ul>
                     </button>
                     <button className="grow focus:opacity-60 focus:bg-purple-200 focus:rounded-xl hover:opacity-60">
                         <ul className="flex flex-col grow items-center">
