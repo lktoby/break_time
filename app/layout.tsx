@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import { Geist } from "next/font/google";
 import localFont from "next/font/local";
 import "./globals.css";
 
@@ -18,12 +17,6 @@ const nicoMoji = localFont({
   display: "swap",
   variable: '--font-nico-moji'
 })
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  display: "swap",
-  subsets: ["latin"],
-});
 
 export default function RootLayout({
   children,

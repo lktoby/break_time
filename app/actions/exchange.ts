@@ -53,7 +53,8 @@ export async function acceptExchange(
   }
 
   revalidatePath("/exchange");
-  revalidatePath("/my-stickers");
+  revalidatePath("/book");
+  revalidatePath("/home");
   return { ok: true };
 }
 
