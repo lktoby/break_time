@@ -4,22 +4,7 @@ import { BottomNav } from "@/components/bottom-nav";
 
 export default function ButtonUsage() {
   return (
-    <div className="min-h-screen bg-[url('/opening2.png')] bg-cover bg-center relative">
-
-      
-      
-      {/* <div className="absolute top-48 left-1/2 -translate-x-1/2">
-      <h1 className="title">
-        {"わくわくシールちょう".split("").map((char, index) => (
-          <span key={index} className="letter"
-          style={{animationDelay: `${index * 0.2}s`,}}>
-            {char}
-          </span>
-        ))}
-      </h1>
-      </div> */}
-
-      
+    <div className="min-h-screen bg-[url('/opening2.png')] bg-cover bg-center relative">      
       <div
         style={{
           height: "100vh",

@@ -6,8 +6,6 @@ export default function ButtonUsage() {
   return (
     <div className="min-h-screen bg-[url('/opening2.png')] bg-cover bg-center relative">
 
-      
-      
       <div className="absolute top-48 left-1/2 -translate-x-1/2">
       <h1 className="title">
         {"わくわくシールちょう".split("").map((char, index) => (
@@ -18,8 +16,6 @@ export default function ButtonUsage() {
         ))}
       </h1>
       </div>
-
-      
       <div
         style={{
           height: "100vh",
@@ -29,11 +25,9 @@ export default function ButtonUsage() {
         }}
       >
         <div style={{ transform: "translateY(40px)" }}>
-          <Button>ログイン</Button>
+          <Button><Link href='auth/login'>ログイン</Link></Button>
         </div>
       </div>
-
-      
       <div className="absolute inset-x-0 bottom-0">
         <BottomNav />
       </div>
