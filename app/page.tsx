@@ -6,8 +6,8 @@ export default function ButtonUsage() {
   return (
     <div className="min-h-screen bg-[url('/opening2.png')] bg-cover bg-center relative">
 
-      <div className="absolute top-48 left-1/2 -translate-x-1/2">
-      <h1 className="title">
+      <div className="flex flex-col items-center justify-center h-screen">
+      <h1 className="title mb-8">
         {"わくわくシールちょう".split("").map((char, index) => (
           <span key={index} className="letter"
           style={{animationDelay: `${index * 0.2}s`,}}>
@@ -24,9 +24,7 @@ export default function ButtonUsage() {
           alignItems: "center",
         }}
       >
-        <div style={{ transform: "translateY(40px)" }}>
-          <Button><Link href='auth/login'>ログイン</Link></Button>
-        </div>
+        <Button><Link href='auth/login'>ログイン</Link></Button>
       </div>
       <div className="absolute inset-x-0 bottom-0">
         <BottomNav />
