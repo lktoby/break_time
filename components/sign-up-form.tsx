@@ -2,6 +2,7 @@
 
 import { cn } from "@/lib/utils";
 import { createClient } from "@/lib/supabase/client";
+import { usernameToInternalEmail } from "@/lib/auth";
 import { Button } from "@/components/ui/button";
 import {
   Card,
