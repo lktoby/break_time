@@ -7,11 +7,7 @@ export default function ButtonUsage() {
     <div className="min-h-screen bg-[url('/opening2.png')] bg-cover bg-center relative">
 
       
-      {/* <div className="absolute top-60 left-1/2 -translate-x-1/2">
-        <h1 className="title">
-          シールちょうアプリ
-        </h1>
-      </div> */}
+      
       <div className="absolute top-48 left-1/2 -translate-x-1/2">
       <h1 className="title">
         {"わくわくシールちょう".split("").map((char, index) => (
