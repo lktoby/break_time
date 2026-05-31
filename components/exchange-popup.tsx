@@ -6,7 +6,7 @@ export default function Exchange(buttonText: string) {
     return (
         <div>
             <AlertDialog>
-                <AlertDialogTrigger>
+                <AlertDialogTrigger asChild>
                     <Button>{buttonText}</Button>
                 </AlertDialogTrigger>
                 <AlertDialogContent>
