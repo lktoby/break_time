@@ -8,8 +8,8 @@ export default function ButtonUsage() {
 
       
       
-      <div className="absolute top-48 left-1/2 -translate-x-1/2">
-      <h1 className="title">
+      <div className="flex flex-col items-center justify-center h-screen">
+      <h1 className="title mb-8">
         {"わくわくシールちょう".split("").map((char, index) => (
           <span key={index} className="letter"
           style={{animationDelay: `${index * 0.2}s`,}}>
@@ -17,10 +17,10 @@ export default function ButtonUsage() {
           </span>
         ))}
       </h1>
-      </div>
+      {/* </div>
 
       
-      <div
+      <div　
         style={{
           height: "100vh",
           display: "flex",
@@ -28,9 +28,9 @@ export default function ButtonUsage() {
           alignItems: "center",
         }}
       >
-        <div style={{ transform: "translateY(40px)" }}>
-          <Button>ログイン</Button>
-        </div>
+        <div style={{ transform: "translateY(40px)" }}> */}
+        <Button>ログイン</Button>
+       
       </div>
 
       
