@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Geist } from "next/font/google";
 import localFont from "next/font/local";
-import "./globals.css";
+import "../globals.css";
 
 const defaultUrl = process.env.VERCEL_URL
   ? `https://${process.env.VERCEL_URL}`
@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 };
 
 const nicoMoji = localFont({
-  src: './NicoMoji-Regular.ttf',
+  src: '../NicoMoji-Regular.ttf',
   display: "swap",
   variable: '--font-nico-moji'
 })
