@@ -12,7 +12,7 @@ export function BottomNav() {
                             <li>
                                 <Link href='/'>
                                     <div className="w-20 h-20 rounded-full bg-white overflow-hidden relative">
-                                        <Image src='/bear.png' alt='home page' fill className="object-cover"></Image>
+                                        <Image src='/stickers/bear.png' alt='home page' fill className="object-cover"></Image>
                                     </div>
                                 </Link>
                             </li>
@@ -24,7 +24,7 @@ export function BottomNav() {
                             <li>
                                 <Link href='/exchange'>
                                     <div className="w-20 h-20 rounded-full bg-white overflow-hidden relative">
-                                        <Image src='/dog3.png' alt='exchange' fill className="object-cover"></Image>
+                                        <Image src='/stickers/dog3.png' alt='exchange' fill className="object-cover"></Image>
                                     </div>
                                 </Link>
                             </li>
@@ -36,7 +36,7 @@ export function BottomNav() {
                             <li>
                                 <Link href='/book'>
                                     <div className="w-20 h-20 rounded-full bg-white overflow-hidden relative">
-                                        <Image src='/cat1.png' alt='collection' fill className="object-cover"></Image>
+                                        <Image src='/stickers/cat1.png' alt='collection' fill className="object-cover"></Image>
                                     </div>
                                 </Link>
                             </li>
