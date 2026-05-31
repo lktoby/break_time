@@ -10,13 +10,13 @@ export function BottomNav() {
                     <button className="grow focus:opacity-60 focus:bg-purple-200 focus:rounded-xl hover:opacity-60">
                         <ul className="flex flex-col items-center">
                             <li>
-                                <Link href='/'>
+                                <Link href='/protected'>
                                     <div className="w-20 h-20 rounded-full bg-white overflow-hidden relative">
                                         <Image src='/stickers/bear.png' alt='home page' fill className="object-cover"></Image>
                                     </div>
                                 </Link>
                             </li>
-                            <li><Link href='/' className="">ホーム</Link></li>
+                            <li><Link href='/protected' className="">ホーム</Link></li>
                         </ul>
                     </button>
                     <button className="grow focus:opacity-60 focus:bg-purple-200 focus:rounded-xl hover:opacity-60">

@@ -5,7 +5,6 @@ import { BottomNav } from "@/components/bottom-nav";
 export default function ButtonUsage() {
   return (
     <div className="min-h-screen bg-[url('/opening2.png')] bg-cover bg-center relative">
-
       <div className="flex flex-col items-center justify-center h-screen">
         <h1 className="title mb-8">
           {"わくわくシールちょう".split("").map((char, index) => (

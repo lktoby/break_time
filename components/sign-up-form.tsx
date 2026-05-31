@@ -15,12 +15,13 @@ import { Label } from "@/components/ui/label";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
+import { usernameToInternalEmail } from "@/lib/auth";
 
 export function SignUpForm({
   className,
   ...props
 }: React.ComponentPropsWithoutRef<"div">) {
-  const [email, setEmail] = useState("");
+  const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const [repeatPassword, setRepeatPassword] = useState("");
   const [error, setError] = useState<string | null>(null);
@@ -34,23 +35,23 @@ export function SignUpForm({
     setError(null);
 
     if (password !== repeatPassword) {
-      setError("Passwords do not match");
+      setError("パスワードがいっちしていない");
       setIsLoading(false);
       return;
     }
 
     try {
       const { error } = await supabase.auth.signUp({
-        email,
+        email: usernameToInternalEmail(username),
         password,
         options: {
           emailRedirectTo: `${window.location.origin}/protected`,
         },
       });
       if (error) throw error;
-      router.push("/auth/sign-up-success");
+      router.push("/protected");
     } catch (error: unknown) {
-      setError(error instanceof Error ? error.message : "An error occurred");
+      setError(error instanceof Error ? error.message : "エラー");
     } finally {
       setIsLoading(false);
     }
@@ -66,13 +67,13 @@ export function SignUpForm({
           <form onSubmit={handleSignUp}>
             <div className="flex flex-col gap-6">
               <div className="grid gap-2">
-                <Label htmlFor="email">ユーザーめい</Label>
+                <Label htmlFor="username">ユーザーめい</Label>
                 <Input
-                  id="email"
+                  id="username"
                   type="text"
                   required
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
+                  value={username}
+                  onChange={(e) => setUsername(e.target.value)}
                 />
               </div>
               <div className="grid gap-2">
@@ -99,7 +100,7 @@ export function SignUpForm({
                   onChange={(e) => setRepeatPassword(e.target.value)}
                 />
               </div>
-              {error && <p className=" text-red-500">{error}</p>}
+              {error && <p className="text-sm text-red-500">{error}</p>}
               <Button type="submit" className="w-full text-2xl" disabled={isLoading}>
                 {isLoading ? "よみこみちゅう..." : "アカウントをつくる"}
               </Button>
