@@ -17,7 +17,6 @@ export default function ButtonUsage() {
           <Button>きょうのシールをゲットしよう★</Button>
         </div>
       </div>
-
       
       <div className="absolute inset-x-0 bottom-0">
         <BottomNav />
