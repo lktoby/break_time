@@ -3,17 +3,17 @@
 @tailwind utilities;
 @font-face {
   font-family: "NicoMoji"; 
-  src: url("/fonts/NicoMoji-Regular.ttf") format("truetype");
+  src: url("../public/fonts/NicoMoji-Regular.ttf") format("truetype");
 }
 
 
 body {
-  background-image: url("/opening.png");
+  background-image: url("/opening2.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  font-family: var(--font-nico-moji);
   color: #9887c5;
+  font-family: "NicoMoji";
   -webkit-text-stroke: 1px white;
   font-size: xx-large;
 

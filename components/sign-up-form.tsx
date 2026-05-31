@@ -2,7 +2,6 @@
 
 import { cn } from "@/lib/utils";
 import { createClient } from "@/lib/supabase/client";
-import { usernameToInternalEmail } from "@/lib/auth";
 import { Button } from "@/components/ui/button";
 import {
   Card,
@@ -16,6 +15,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
+import { usernameToInternalEmail } from "@/lib/auth";
 
 const AVATARS = ["avatar-1", "avatar-2", "avatar-3", "avatar-4", "avatar-5"];
 const USERNAME_RE = /^[a-z0-9_]{3,20}$/;
