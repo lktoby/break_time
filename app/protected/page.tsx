@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { BottomNav } from "@/components/bottom-nav";
+import DailySticker from "@/components/daily-sticker-popup";
 
 export default function ButtonUsage() {
   return (
@@ -14,7 +15,7 @@ export default function ButtonUsage() {
             </span>
           ))}
         </h1>
-        <Button>きょうのシールをゲット★</Button>
+        {DailySticker("きょうのシールをゲット★")}
       </div>
       <div className="absolute inset-x-0 bottom-0">
         <BottomNav />
