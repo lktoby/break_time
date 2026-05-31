@@ -2,6 +2,7 @@
 
 import { cn } from "@/lib/utils";
 import { createClient } from "@/lib/supabase/client";
+import { usernameToInternalEmail } from "@/lib/auth";
 import { Button } from "@/components/ui/button";
 import {
   Card,
@@ -41,7 +42,7 @@ export function SignUpForm({
 
     try {
       const { error } = await supabase.auth.signUp({
-        email,
+        email: usernameToInternalEmail(email),
         password,
         options: {
           emailRedirectTo: `${window.location.origin}/protected`,
